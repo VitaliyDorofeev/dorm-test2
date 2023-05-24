@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="container">
+
+      <button id="openModalBtn">Открыть форму обратной связи</button>
+      <div id="modal">
+        <form class="form">
+            <div class="form-item">
+                <input class="form__email" placeholder="Ваш Email" type="email" name="email">
+            </div>
+            <div class="form-item">
+                <input 
+                    type="text" 
+                    class="form__phone phone-field"
+                    name="phone" 
+                    placeholder="Номер телефона" 
+                    data-rule-required="true" 
+                    data-rule-minlength="10" 
+                    data-msg="Введите номер телефона"
+                />
+            </div>
+            <div class="form-item">
+                <input class="form__message" placeholder="Сообщение" name="message">
+            </div>
+            <div class="form-item">
+                <button class="button" type="submit" value="Отправить">Отправить</button>
+            </div>
+        </form>
+        <div id="answer"></div>
+      </div>
+    
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+    {
+        "email": "test1@gma.com",
+        "phone": "+7(888)888-8888",
+        "message": "hello, world"
+    },
+    {
+        "email": "test2@adadadad.com",
+        "phone": "+7(555)555-5555",
+        "message": "hello, world"
+    }
+]
